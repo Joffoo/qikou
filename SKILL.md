@@ -1,6 +1,6 @@
 ---
 name: qikou
-description: 基于本地 TTS 发声与自然呼吸节奏的去 AI 味双子 Agent 工作流。利用本地 TTS 发声将平面文字拉入真实时间流，盲听子 Agent 亲耳听取音频并基于硬核事实清单重构从容自然的散文口语。当用户要求“听感去AI”、“语音去AI味”、“朗读测去AI”、“用TTS帮改文章去AI感”时触发。
+description: 基于本地 TTS 发声与生理语流呼吸节奏的去 AI 味双子 Agent 工作流。利用本地 TTS 将文字拉入真实时间流，盲听子 Agent 亲耳听取音频并基于硬核事实清单重构从容自然的散文口语。当用户要求“听感去AI”、“语音去AI味”、“朗读测去AI”、“用TTS帮改文章去AI感”、“气口改文”或提到 qikou、因声求气时触发。不用于纯文本规则剪枝与词表替换（用 lieflat-less-ai-tone 或 humanizer-zh），不用于普通语音合成与配音交付（用 voice/musprompt），不用于学术论文与代码降重。
 ---
 
 # Qikou（气口）· 听觉节奏去 AI 工作流
