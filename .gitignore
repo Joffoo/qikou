@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.wav
+*.mp3
+.temp/
+output/
+.DS_Store
+Thumbs.db
