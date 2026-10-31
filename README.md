@@ -38,7 +38,7 @@ qikou/
 ├── references/
 │   └── prompt-templates.md           # 双 Agent 提示词模板
 └── scripts/
-    └── run_deai.py                   # Windows 本地 SAPI 音频合成脚本
+    └── text_to_wav.py                   # Windows 本地 SAPI 音频合成脚本
 ```
 
 ### 快速开始
@@ -54,10 +54,10 @@ qikou/
 #### 2. 本地音频合成
 ```bash
 # 将文本文件转换为 wav 音频
-python scripts/run_deai.py <input_text_path> [output_wav_path]
+python scripts/text_to_wav.py <input_text_path> [output_wav_path]
 
 # 或通过命令行字符串直接生成
-python scripts/run_deai.py "待转换的文本内容" output.wav
+python scripts/text_to_wav.py "待转换的文本内容" output.wav
 ```
 
 #### 3. 作为 Agent Skill 使用
@@ -102,7 +102,7 @@ qikou/
 ├── references/
 │   └── prompt-templates.md           # Dual-agent prompt templates
 └── scripts/
-    └── run_deai.py                   # Local Windows SAPI audio synthesis script
+    └── text_to_wav.py                   # Local Windows SAPI audio synthesis script
 ```
 
 ### Quick Start
@@ -118,10 +118,10 @@ qikou/
 #### 2. Local Audio Generation
 ```bash
 # Convert a text file into wav audio
-python scripts/run_deai.py <input_text_path> [output_wav_path]
+python scripts/text_to_wav.py <input_text_path> [output_wav_path]
 
 # Or generate directly from text string
-python scripts/run_deai.py "Text content to speak" output.wav
+python scripts/text_to_wav.py "Text content to speak" output.wav
 ```
 
 #### 3. Install as an Agent Skill

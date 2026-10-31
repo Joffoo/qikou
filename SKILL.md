@@ -60,7 +60,7 @@ description: 基于本地 TTS 发声与生理语流呼吸节奏的去 AI 味双�
 提示词严格套用规范模板：[references/prompt-templates.md](references/prompt-templates.md)。
 
 1. **事实提取**：拉起子 Agent 1，套用 `模板一`（ASD-STE100 原子化陈述规范），传入待改文本，获取纯事实清单。
-2. **TTS 发声**：运行 `python scripts/run_deai.py <待测文本路径> <wav输出路径>` 生成真实音频。
+2. **TTS 发声**：运行 `python scripts/text_to_wav.py <待测文本路径> <wav输出路径>` 生成真实音频。
 3. **盲听重构**：拉起子 Agent 2，套用 `模板二`（仅传入 `WAV_PATH` 与 `FACT_SHEET`，严禁传入原文文本）。子 Agent 2 用 `read_file` 听音频并输出成段正文。
 
 ---
@@ -69,5 +69,5 @@ description: 基于本地 TTS 发声与生理语流呼吸节奏的去 AI 味双�
 
 ```bash
 # 本地生成真实 16-bit PCM WAV 音频
-python scripts/run_deai.py <待测文本文件路径> [wav输出路径]
+python scripts/text_to_wav.py <待测文本文件路径> [wav输出路径]
 ```
